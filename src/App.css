@@ -1,18 +1,49 @@
-.App {
+.timerText {
   text-align: center;
   color: #FFFFFF;
-  text-shadow: 1px 1px 5px #222222;
-  opacity: 1.0;
+  
+  text-shadow: 2px 2px 1px hsl(0, 0%, 6%);
+
+	
+	
+  
+}
+
+.subText {
+	margin-top: 0px;
+}
+
+.dataText {
+	margin-top: 25px;
+}
+
+.buttonLine {
+	text-align: right;
+	margin: 24px 24px 10px 24px;
 }
 
 body {
-  background: url(images/skank2.jpg) no-repeat left center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+	margin: 24px;
+
+	background: url(images/skank2_overlay.jpg) no-repeat left center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+
 }
 
-html {
-	opacity: 0.8;
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: rgba(5, 5, 5, 1);
+	color: #FFFFFF;
+	text-align: center;
 }
+
+/* p {
+	margin: 7px;
+} */
