@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/skank-saidera-counter/static/css/main.3aefc98a.chunk.css",
-    "main.js": "/skank-saidera-counter/static/js/main.a12fe64b.chunk.js",
-    "main.js.map": "/skank-saidera-counter/static/js/main.a12fe64b.chunk.js.map",
+    "main.css": "/skank-saidera-counter/static/css/main.0b62067b.chunk.css",
+    "main.js": "/skank-saidera-counter/static/js/main.884df915.chunk.js",
+    "main.js.map": "/skank-saidera-counter/static/js/main.884df915.chunk.js.map",
     "runtime-main.js": "/skank-saidera-counter/static/js/runtime-main.cb8966ce.js",
     "runtime-main.js.map": "/skank-saidera-counter/static/js/runtime-main.cb8966ce.js.map",
     "static/js/2.6b0c35c4.chunk.js": "/skank-saidera-counter/static/js/2.6b0c35c4.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.9690451b.chunk.js": "/skank-saidera-counter/static/js/3.9690451b.chunk.js",
     "static/js/3.9690451b.chunk.js.map": "/skank-saidera-counter/static/js/3.9690451b.chunk.js.map",
     "index.html": "/skank-saidera-counter/index.html",
-    "static/css/main.3aefc98a.chunk.css.map": "/skank-saidera-counter/static/css/main.3aefc98a.chunk.css.map",
+    "static/css/main.0b62067b.chunk.css.map": "/skank-saidera-counter/static/css/main.0b62067b.chunk.css.map",
     "static/js/2.6b0c35c4.chunk.js.LICENSE.txt": "/skank-saidera-counter/static/js/2.6b0c35c4.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/skank-saidera-counter/static/media/logo.6ce24c58.svg",
     "static/media/App.css": "/skank-saidera-counter/static/media/skank2.c7e3f763.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.cb8966ce.js",
     "static/js/2.6b0c35c4.chunk.js",
-    "static/css/main.3aefc98a.chunk.css",
-    "static/js/main.a12fe64b.chunk.js"
+    "static/css/main.0b62067b.chunk.css",
+    "static/js/main.884df915.chunk.js"
   ]
 }
