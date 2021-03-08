@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/skank-saidera-counter/static/css/main.6b32510d.chunk.css",
+    "main.css": "/skank-saidera-counter/static/css/main.4e3ac64d.chunk.css",
     "main.js": "/skank-saidera-counter/static/js/main.2801c571.chunk.js",
     "main.js.map": "/skank-saidera-counter/static/js/main.2801c571.chunk.js.map",
     "runtime-main.js": "/skank-saidera-counter/static/js/runtime-main.6ff1d6b3.js",
@@ -12,17 +12,17 @@
     "static/js/3.6a5b99d0.chunk.js.map": "/skank-saidera-counter/static/js/3.6a5b99d0.chunk.js.map",
     "index.html": "/skank-saidera-counter/index.html",
     "static/css/2.fabbef47.chunk.css.map": "/skank-saidera-counter/static/css/2.fabbef47.chunk.css.map",
-    "static/css/main.6b32510d.chunk.css.map": "/skank-saidera-counter/static/css/main.6b32510d.chunk.css.map",
+    "static/css/main.4e3ac64d.chunk.css.map": "/skank-saidera-counter/static/css/main.4e3ac64d.chunk.css.map",
     "static/js/2.d4c68eba.chunk.js.LICENSE.txt": "/skank-saidera-counter/static/js/2.d4c68eba.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/skank-saidera-counter/static/media/logo.6ce24c58.svg",
     "static/media/skank2.c7e3f763.jpg": "/skank-saidera-counter/static/media/skank2.c7e3f763.jpg",
-    "static/media/App.css": "/skank-saidera-counter/static/media/skank2_overlay.e5506a64.jpg"
+    "static/media/App.css": "/skank-saidera-counter/static/media/skank2_overlay.360acec8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6ff1d6b3.js",
     "static/css/2.fabbef47.chunk.css",
     "static/js/2.d4c68eba.chunk.js",
-    "static/css/main.6b32510d.chunk.css",
+    "static/css/main.4e3ac64d.chunk.css",
     "static/js/main.2801c571.chunk.js"
   ]
 }
