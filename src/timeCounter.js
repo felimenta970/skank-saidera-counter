@@ -6,29 +6,33 @@ const{ DateTime, Interval, Duration } = require("luxon");
 
 function Timer() {
 
-
+    // Inicializa a data inicial do show e o momento que o site carrega
+    // Usa a ferramenta DateTime da biblioteca "luxon"
     var dateStart = DateTime.local(2015, 11, 1, 0, 30);
     var now = DateTime.now();
 
+    // Calcula o intervalo de tempo entre as duas datas
+    // Usa a ferramenta Interval da biblioteca "luxon"
     var intervalo = Interval.fromDateTimes(dateStart, now);
 
+    // Recebe a duração em minutos do intervalo
     var minutes = intervalo.length('minutes');
 
+    // Calcula a quantidade aproximada de músicas (considerando cada música com 3m30s)
     var musicasTemp = Math.round(minutes/3.5);
+    // Converte para uma string
     var musicas = musicasTemp.toLocaleString('pt-BR');
 
+    // Calcula o número de saideras pedidas
+    // Considera chamada de saidera a cada duas músicas, e que o show durou 90 minutos antes da primeira saidera
     var saiderasTemp = Math.round(minutes/7) - 90;
     var saideras = saiderasTemp.toLocaleString('pt-BR');
 
+    // Calcula quanto tempo se passou desde o início do show
+    // Usa o 'diff',que nos mostra anos, meses, dias e horas e transforma em um objeto para fácil obtenção dos dados
     const diference = now.diff(dateStart, ["years", "months", "days", "hours"]).toObject();
 
-    
-    // Duração
-
-    console.log(diference);
-
-
-    
+    // HTML do texto
     return (
         <div className="App">
         <h1>Skank show infinito</h1>
