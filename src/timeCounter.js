@@ -1,36 +1,48 @@
 import './App.css';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const{ DateTime, Interval } = require("luxon");
 
 function Timer() {
 
-    // Inicializa a data inicial do show e o momento que o site carrega
-    // Usa a ferramenta DateTime da biblioteca "luxon"
-    var dateStart = DateTime.local(2015, 11, 1, 0, 30);
-    var now = DateTime.now();
+    // TODO: Atualizar para que comece imediatamente
 
-    // Calcula o intervalo de tempo entre as duas datas
-    // Usa a ferramenta Interval da biblioteca "luxon"
-    var intervalo = Interval.fromDateTimes(dateStart, now);
+    const [musicas, setMusicas] = useState(0);
+    const [saideras, setSaideras] = useState(0);
+    const [diference, setDiference] = useState(0);
 
-    // Recebe a duração em minutos do intervalo
-    var minutes = intervalo.length('minutes');
+    useEffect(() => {
+        const interval_id = setInterval(() => {
+            // Inicializa a data inicial do show e o momento que o site carrega
+            // Usa a ferramenta DateTime da biblioteca "luxon"
+            var dateStart = DateTime.local(2015, 11, 1, 0, 30);
+            var now = DateTime.now();
 
-    // Calcula a quantidade aproximada de músicas (considerando cada música com 3m30s)
-    var musicasTemp = Math.round(minutes/3.5);
-    // Converte para uma string
-    var musicas = musicasTemp.toLocaleString('pt-BR');
+            // Calcula o intervalo de tempo entre as duas datas
+            // Usa a ferramenta Interval da biblioteca "luxon"
+            var intervalo = Interval.fromDateTimes(dateStart, now);
 
-    // Calcula o número de saideras pedidas
-    // Considera chamada de saidera a cada duas músicas, e que o show durou 90 minutos antes da primeira saidera
-    var saiderasTemp = Math.round((minutes - 90)/7);
-    var saideras = saiderasTemp.toLocaleString('pt-BR');
+            // Recebe a duração em minutos do intervalo
+            var minutes = intervalo.length('minutes');
 
-    // Calcula quanto tempo se passou desde o início do show
-    // Usa o 'diff',que nos mostra anos, meses, dias e horas e transforma em um objeto para fácil obtenção dos dados
-    const diference = now.diff(dateStart, ["years", "months", "days", "hours", "minutes", "seconds"]).toObject();
+            // Calcula a quantidade aproximada de músicas (considerando cada música com 3m30s)
+            var musicasTemp = Math.round(minutes/3.5);
+            // Converte para uma string
+            setMusicas(musicas => musicasTemp.toLocaleString('pt-BR'));
+
+            // Calcula o número de saideras pedidas
+            // Considera chamada de saidera a cada duas músicas, e que o show durou 90 minutos antes da primeira saidera
+            var saiderasTemp = Math.round((minutes - 90)/7);
+            setSaideras(saideras => saiderasTemp.toLocaleString('pt-BR'));
+
+            // Calcula quanto tempo se passou desde o início do show
+            // Usa o 'diff',que nos mostra anos, meses, dias e horas e transforma em um objeto para fácil obtenção dos dados
+            setDiference(diference => now.diff(dateStart, ["years", "months", "days", "hours", "minutes", "seconds"]).toObject());
+        }, 1000);
+
+        return () => clearInterval(interval_id);
+    }, )
 
     // HTML do texto
     return (
@@ -49,7 +61,7 @@ function Timer() {
             <div className="subText">Considerando 2 músicas por "saidera" e que a primeira rolou após 1h30 depois do início do show</div>
 
             {/* Tempo desde o início do show */}
-            <h3 className="dataText">Se passaram {diference.years} anos, {diference.months} meses, {diference.days} dias, (diference.hours) horas, {diference.minutes} minutos e {Math.round(diference.seconds)} segundos desde o início do show</h3>
+            <h3 className="dataText">Se passaram {diference.years} anos, {diference.months} meses, {diference.days} dias, {diference.hours} horas, {diference.minutes} minutos e {Math.round(diference.seconds)} segundos desde o início do show</h3>
 
             <br/>
         </div>
