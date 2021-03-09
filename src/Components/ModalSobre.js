@@ -35,6 +35,9 @@ function ModalSobre(props) {
                 <p>
                     Evento realizado por Criativa | O Inter
                 </p>
+
+                <h4>Código fonte</h4>
+                <a href="https://github.com/felimenta970/skank-saidera-counter">https://github.com/felimenta970/skank-saidera-counter</a>
             </Modal.Body>
 
             {/* Footer do modal, com botão de close */}
