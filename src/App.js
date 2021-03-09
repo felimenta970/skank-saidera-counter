@@ -1,13 +1,13 @@
 import React from 'react';
 
 // Import do componente com textos de timer
-import Timer from './timeCounter.js';
+import Timer from './Components/timeCounter.js';
 
 // Import do botão do Bootstrap
 import Button from 'react-bootstrap/Button';
 
 // Import do componente Modal
-import ModalSobre from './ModalSobre.js';
+import ModalSobre from './Components/ModalSobre.js';
 
 // Import css
 import './App.css';

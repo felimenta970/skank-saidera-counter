@@ -1,4 +1,4 @@
-import './App.css';
+import './../App.css';
 
 import React, { useEffect, useState } from 'react';
 
@@ -62,6 +62,7 @@ function Timer() {
 
             {/* Tempo desde o início do show */}
             <h3 className="dataText">Se passaram {diference.years} anos, {diference.months} meses, {diference.days} dias, {diference.hours} horas, {diference.minutes} minutos e {Math.round(diference.seconds)} segundos desde o início do show</h3>
+            <div className="subText">Considerando que o show começou às 00h30 do dia 01/11/2015</div>
 
             <br/>
         </div>
