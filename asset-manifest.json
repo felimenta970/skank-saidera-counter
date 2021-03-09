@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/skank-saidera-counter/static/css/main.70cc20f8.chunk.css",
-    "main.js": "/skank-saidera-counter/static/js/main.8b28dcce.chunk.js",
-    "main.js.map": "/skank-saidera-counter/static/js/main.8b28dcce.chunk.js.map",
+    "main.js": "/skank-saidera-counter/static/js/main.36f3a31e.chunk.js",
+    "main.js.map": "/skank-saidera-counter/static/js/main.36f3a31e.chunk.js.map",
     "runtime-main.js": "/skank-saidera-counter/static/js/runtime-main.6ff1d6b3.js",
     "runtime-main.js.map": "/skank-saidera-counter/static/js/runtime-main.6ff1d6b3.js.map",
     "static/css/2.fabbef47.chunk.css": "/skank-saidera-counter/static/css/2.fabbef47.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.fabbef47.chunk.css",
     "static/js/2.55c1d12e.chunk.js",
     "static/css/main.70cc20f8.chunk.css",
-    "static/js/main.8b28dcce.chunk.js"
+    "static/js/main.36f3a31e.chunk.js"
   ]
 }
