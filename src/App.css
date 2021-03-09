@@ -1,31 +1,39 @@
+/* Texto do timer */
 .timerText {
   text-align: center;
   color: #FFFFFF;
   
   text-shadow: 2px 2px 1px hsl(0, 0%, 6%);
 
-	
-	
-  
 }
 
+/* Modal */
+.modalText {
+	text-align: center;
+}
+
+/* Texto auxiliar */
 .subText {
 	margin-top: 0px;
 }
 
+/* Texto prinicipal */
 .dataText {
 	margin-top: 25px;
 }
 
+/* Div em que se encontra o botão SOBRE */
 .buttonLine {
 	text-align: right;
 	margin: 24px 24px 10px 24px;
 }
 
+/* Body da página */
 body {
 
 	margin: 24px;
 
+	/* Background da foto */
 	background: url(images/skank2_overlay.jpg) no-repeat left center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -33,17 +41,3 @@ body {
 	background-size: cover; 
 
 }
-
-.footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background: rgba(5, 5, 5, 1);
-	color: #FFFFFF;
-	text-align: center;
-}
-
-/* p {
-	margin: 7px;
-} */

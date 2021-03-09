@@ -1,21 +1,25 @@
 import React from 'react';
 
+// Import do componente Modal e Botão do Bootstrap
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 function ModalSobre(props) {
     return (
-        <Modal
+        <Modal className="modalText"
             {...props}
-            size="lg"
+            size="md"
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
+            {/* Header com botão de close */}
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
                     Sobre
                 </Modal.Title>
             </Modal.Header>
+
+            {/* Corpo do modal */}
             <Modal.Body>
                 <h4>Desenvolvido por</h4>
                 <p>
@@ -32,6 +36,8 @@ function ModalSobre(props) {
                     Evento realizado por Criativa | O Inter
                 </p>
             </Modal.Body>
+
+            {/* Footer do modal, com botão de close */}
             <Modal.Footer>
                 <Button variant="dark" onClick={props.onHide}>Fechar</Button>
             </Modal.Footer>
